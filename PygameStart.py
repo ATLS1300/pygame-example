@@ -24,47 +24,24 @@ win = pygame.display.set_mode((w,h)) # define window variable
 WHITE = (255,255,255) # some handy RGB values
 BLACK = (0,0,0)
 
-def blinkBox(counter):
-    # use modulo to occasionally draw a white box
-    if (counter % 20)>9:
-        pygame.draw.rect(win,WHITE,(x,y,size,size))
 
-    counter += 1
-    return counter
-
-def blinkBoxGlobal():
-    global counter
-    local = "I'm local"
-    # use modulo to occasionally draw a white box
-    if (counter % 20)>9:
-        pygame.draw.rect(win,WHITE,(x,y,size,size))
-
-    counter += 1
 #================================ Animation loop ===================================================
-# start values defined here
+# start run function def here
 running = True
 clock = pygame.time.Clock() # for framerate timing
 
-size = 200
-y = h/2-size/2
-switch = True
-counter = 0
+
 
 while running:
+    #================== Your animation tasks ================
+    # call functions, increment values
+    
+    
     # clear window (comment out to have trace behind animation)
     win.fill(BLACK)
 
-    # counter = blinkBox(counter)
-    blinkBoxGlobal()
-    x = w/2-size/2 # center, adjusted for width of shape
-
-    # # use modulo to occasionally draw a white box
-    # if (counter % 20)>9:
-    #     pygame.draw.rect(win,WHITE,(x,y,size,size))
-
-    # counter += 1
    
-
+    #================== Interactinos ================
     # This loop allows windows when exit is clicked.
     # Do not change, remove or augment this loop...yet.
     for event in pygame.event.get():
@@ -72,11 +49,8 @@ while running:
             running = False # stops animation
             #pygame.quit() # stops running code & closes window
                 
-    #================== Your animation tasks ================
-    # call functions, increment values
-    
-    # stop conditional would go here too
-    
+    # stop conditional would go here 
+
     
     #================== Animation control ===================
     pygame.display.update()
