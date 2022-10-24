@@ -1,5 +1,5 @@
 """
-Pygame Startere Code
+Pygame Starter Code
 ATLS 1300/5650
 
 Author: YOUR NAME
