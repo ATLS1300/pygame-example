@@ -2,13 +2,13 @@
 Pygame Startere Code
 ATLS 1300/5650
 
-Author: In Class
-10/20
+Author: YOUR NAME
+DATE
 
 NOTE: the animation loop is inifinite. You will have to add a conditional
 to break the loop, if desired. Infinite looping animation can be used intentionally!
 
-Makes a white rectangle blink on a black background.
+Replace this text with your description.
 '''"""
 
 import pygame
