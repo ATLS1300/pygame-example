@@ -23,11 +23,6 @@ pygame.init()
 soundfile = "tech.wav" # change to your file name
 mixer.music.load(soundfile)
 
-# Play the song at startup
-mixer.music.play()
-
-# Stop the song
-#mixer.music.stop()
 
 # USE IN SIMPLE ANIMATION
 w = 600
@@ -35,6 +30,12 @@ h = 400
 win = pygame.display.set_mode((w,h))
 
 def main():
+    # Play the song at startup
+    mixer.music.play()
+
+    # Stop the song
+    #mixer.music.stop()
+    
     running = True
 
     while running:
