@@ -1,13 +1,26 @@
 '''
-Making a bubble game
+Making an OOP game 
+Examplifies building and using a Player class (controlled by used)
 
 AUTHOR: Dr. Z
 DATE: 11/4
 
-Objectives:
-Rules:
+Objective: 
+        Match as many colors as possible before time runs out (30 or 15 s)
+Rules: 
+        1. Player can only move up and down, not left and right. 
+        2. Bubbles only move left to right (maybe some wiggle to them?) # BUBBLES NOT CODED IN THIS SCRIPT
+        3. Player can only disappear bubbles that match its color
+        4. Player can’t touch top/bottom of screen or game over.
+
 Challenge:
+        1. If player collides with the wrong color, the square gets bigger, making it harder to avoid mismatching colored bubbles. (End game???)  # BUBBLES NOT CODED IN THIS SCRIPT
+        2. Bigger size has a larger cost--can’t touch top/bottom of screen or game over.
+
 Interaction:
+        1. Bubbles don’t interact with each other, only the player
+        2. Player can’t touch top or bottom screen edges or game over (edges have highlight?)
+
 '''
 import pygame
 pygame.init()
