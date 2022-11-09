@@ -40,6 +40,8 @@ class Bubble:
         self.size=size
         self.fillColor=color 
         self.lineColor = (27, 64, 121)
+        
+        # One way to draw with pygame (pygamme.Rect + pyagme.Surface)
         self.box=pygame.Rect(startPos[0],startPos[1],size,size) # CIRCLE POSITION INFO
         
         self.draw = True # to toggle appearance of object (hide- False, show- True)
@@ -67,8 +69,10 @@ class Bubble:
         '''DIFFERENT FROM CLASS. draws outlined circle by drawing 2 circles on top of each other'''
         if self.draw:
             # draw is on...
+            
+            # Another way to draw with pygame (pygame.draw)
             pygame.draw.circle(win,self.lineColor,(self.x,self.y),self.size+2)
-            self.box=pygame.draw.circle(win,self.fillColor,(self.x,self.y),self.size)
+            self.box=pygame.draw.circle(win,self.fillColor,(self.x,self.y),self.size) # pygame draw methods retun pygame.Rect object
     
     def checkClick(self):
         '''Checks for left mouesclick event. Call inside of event for loop.'''
